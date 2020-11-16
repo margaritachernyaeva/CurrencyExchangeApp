@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5219EED125557AE800AE41AE /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219EED025557AE800AE41AE /* CurrencyModel.swift */; };
+		5219EEDA25557BAC00AE41AE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219EED925557BAC00AE41AE /* ViewModel.swift */; };
 		5224CBE9255438A100BF47C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CBE8255438A100BF47C6 /* AppDelegate.swift */; };
 		5224CBEB255438A100BF47C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CBEA255438A100BF47C6 /* SceneDelegate.swift */; };
 		5224CBED255438A100BF47C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CBEC255438A100BF47C6 /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		5224CBF5255438A400BF47C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5224CBF3255438A400BF47C6 /* LaunchScreen.storyboard */; };
 		5224CC00255438A500BF47C6 /* CurrencyForFutureMVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CBFF255438A500BF47C6 /* CurrencyForFutureMVCTests.swift */; };
 		5224CC0B255438A500BF47C6 /* CurrencyForFutureMVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CC0A255438A500BF47C6 /* CurrencyForFutureMVCUITests.swift */; };
+		5224CC1C2554444700BF47C6 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5224CC1B2554444700BF47C6 /* CurrencyTableViewCell.swift */; };
+		52EF6D7925544A09009C3CFE /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EF6D7825544A09009C3CFE /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5224CBE5255438A100BF47C6 /* CurrencyForFutureMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyForFutureMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5219EED025557AE800AE41AE /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		5219EED925557BAC00AE41AE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		5224CBE5255438A100BF47C6 /* CurrencyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5224CBE8255438A100BF47C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5224CBEA255438A100BF47C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5224CBEC255438A100BF47C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,12 +49,14 @@
 		5224CBF1255438A400BF47C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5224CBF4255438A400BF47C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5224CBF6255438A400BF47C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5224CBFB255438A500BF47C6 /* CurrencyForFutureMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyForFutureMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5224CBFB255438A500BF47C6 /* CurrencyMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5224CBFF255438A500BF47C6 /* CurrencyForFutureMVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyForFutureMVCTests.swift; sourceTree = "<group>"; };
 		5224CC01255438A500BF47C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5224CC06255438A500BF47C6 /* CurrencyForFutureMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyForFutureMVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5224CC06255438A500BF47C6 /* CurrencyMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5224CC0A255438A500BF47C6 /* CurrencyForFutureMVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyForFutureMVCUITests.swift; sourceTree = "<group>"; };
 		5224CC0C255438A500BF47C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5224CC1B2554444700BF47C6 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		52EF6D7825544A09009C3CFE /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +84,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5219EEC8255488BF00AE41AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5224CBEC255438A100BF47C6 /* ViewController.swift */,
+				5224CC1B2554444700BF47C6 /* CurrencyTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5219EEC9255488DE00AE41AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52EF6D7825544A09009C3CFE /* Currency.swift */,
+				5219EED025557AE800AE41AE /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5219EED525557B8000AE41AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5219EED925557BAC00AE41AE /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5224CBDC255438A100BF47C6 = {
 			isa = PBXGroup;
 			children = (
-				5224CBE7255438A100BF47C6 /* CurrencyForFutureMVC */,
-				5224CBFE255438A500BF47C6 /* CurrencyForFutureMVCTests */,
-				5224CC09255438A500BF47C6 /* CurrencyForFutureMVCUITests */,
+				5224CBF6255438A400BF47C6 /* Info.plist */,
+				5224CBE7255438A100BF47C6 /* CurrencyForFutureMVVM */,
+				5224CBFE255438A500BF47C6 /* CurrencyForFutureMVVMTests */,
+				5224CC09255438A500BF47C6 /* CurrencyForFutureMVVMCUITests */,
 				5224CBE6255438A100BF47C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,51 +124,52 @@
 		5224CBE6255438A100BF47C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5224CBE5255438A100BF47C6 /* CurrencyForFutureMVC.app */,
-				5224CBFB255438A500BF47C6 /* CurrencyForFutureMVCTests.xctest */,
-				5224CC06255438A500BF47C6 /* CurrencyForFutureMVCUITests.xctest */,
+				5224CBE5255438A100BF47C6 /* CurrencyMVVM.app */,
+				5224CBFB255438A500BF47C6 /* CurrencyMVVMTests.xctest */,
+				5224CC06255438A500BF47C6 /* CurrencyMVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5224CBE7255438A100BF47C6 /* CurrencyForFutureMVC */ = {
+		5224CBE7255438A100BF47C6 /* CurrencyForFutureMVVM */ = {
 			isa = PBXGroup;
 			children = (
 				5224CBE8255438A100BF47C6 /* AppDelegate.swift */,
 				5224CBEA255438A100BF47C6 /* SceneDelegate.swift */,
-				5224CBEC255438A100BF47C6 /* ViewController.swift */,
-				5224CBEE255438A100BF47C6 /* Main.storyboard */,
+				5219EEC8255488BF00AE41AE /* View */,
+				5219EEC9255488DE00AE41AE /* Model */,
+				5219EED525557B8000AE41AE /* ViewModel */,
 				5224CBF1255438A400BF47C6 /* Assets.xcassets */,
+				5224CBEE255438A100BF47C6 /* Main.storyboard */,
 				5224CBF3255438A400BF47C6 /* LaunchScreen.storyboard */,
-				5224CBF6255438A400BF47C6 /* Info.plist */,
 			);
-			path = CurrencyForFutureMVC;
+			path = CurrencyForFutureMVVM;
 			sourceTree = "<group>";
 		};
-		5224CBFE255438A500BF47C6 /* CurrencyForFutureMVCTests */ = {
+		5224CBFE255438A500BF47C6 /* CurrencyForFutureMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
 				5224CBFF255438A500BF47C6 /* CurrencyForFutureMVCTests.swift */,
 				5224CC01255438A500BF47C6 /* Info.plist */,
 			);
-			path = CurrencyForFutureMVCTests;
+			path = CurrencyForFutureMVVMTests;
 			sourceTree = "<group>";
 		};
-		5224CC09255438A500BF47C6 /* CurrencyForFutureMVCUITests */ = {
+		5224CC09255438A500BF47C6 /* CurrencyForFutureMVVMCUITests */ = {
 			isa = PBXGroup;
 			children = (
 				5224CC0A255438A500BF47C6 /* CurrencyForFutureMVCUITests.swift */,
 				5224CC0C255438A500BF47C6 /* Info.plist */,
 			);
-			path = CurrencyForFutureMVCUITests;
+			path = CurrencyForFutureMVVMCUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5224CBE4255438A100BF47C6 /* CurrencyForFutureMVC */ = {
+		5224CBE4255438A100BF47C6 /* CurrencyMVVM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5224CC0F255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVC" */;
+			buildConfigurationList = 5224CC0F255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVM" */;
 			buildPhases = (
 				5224CBE1255438A100BF47C6 /* Sources */,
 				5224CBE2255438A100BF47C6 /* Frameworks */,
@@ -143,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = CurrencyForFutureMVC;
+			name = CurrencyMVVM;
 			productName = CurrencyForFutureMVC;
-			productReference = 5224CBE5255438A100BF47C6 /* CurrencyForFutureMVC.app */;
+			productReference = 5224CBE5255438A100BF47C6 /* CurrencyMVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5224CBFA255438A500BF47C6 /* CurrencyForFutureMVCTests */ = {
+		5224CBFA255438A500BF47C6 /* CurrencyMVVMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5224CC12255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVCTests" */;
+			buildConfigurationList = 5224CC12255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVMTests" */;
 			buildPhases = (
 				5224CBF7255438A500BF47C6 /* Sources */,
 				5224CBF8255438A500BF47C6 /* Frameworks */,
@@ -161,14 +197,14 @@
 			dependencies = (
 				5224CBFD255438A500BF47C6 /* PBXTargetDependency */,
 			);
-			name = CurrencyForFutureMVCTests;
+			name = CurrencyMVVMTests;
 			productName = CurrencyForFutureMVCTests;
-			productReference = 5224CBFB255438A500BF47C6 /* CurrencyForFutureMVCTests.xctest */;
+			productReference = 5224CBFB255438A500BF47C6 /* CurrencyMVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5224CC05255438A500BF47C6 /* CurrencyForFutureMVCUITests */ = {
+		5224CC05255438A500BF47C6 /* CurrencyMVVMUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5224CC15255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVCUITests" */;
+			buildConfigurationList = 5224CC15255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVMUITests" */;
 			buildPhases = (
 				5224CC02255438A500BF47C6 /* Sources */,
 				5224CC03255438A500BF47C6 /* Frameworks */,
@@ -179,9 +215,9 @@
 			dependencies = (
 				5224CC08255438A500BF47C6 /* PBXTargetDependency */,
 			);
-			name = CurrencyForFutureMVCUITests;
+			name = CurrencyMVVMUITests;
 			productName = CurrencyForFutureMVCUITests;
-			productReference = 5224CC06255438A500BF47C6 /* CurrencyForFutureMVCUITests.xctest */;
+			productReference = 5224CC06255438A500BF47C6 /* CurrencyMVVMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5224CBE0255438A100BF47C6 /* Build configuration list for PBXProject "CurrencyForFutureMVC" */;
+			buildConfigurationList = 5224CBE0255438A100BF47C6 /* Build configuration list for PBXProject "CurrencyMVVM" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5224CBE4255438A100BF47C6 /* CurrencyForFutureMVC */,
-				5224CBFA255438A500BF47C6 /* CurrencyForFutureMVCTests */,
-				5224CC05255438A500BF47C6 /* CurrencyForFutureMVCUITests */,
+				5224CBE4255438A100BF47C6 /* CurrencyMVVM */,
+				5224CBFA255438A500BF47C6 /* CurrencyMVVMTests */,
+				5224CC05255438A500BF47C6 /* CurrencyMVVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5224CC1C2554444700BF47C6 /* CurrencyTableViewCell.swift in Sources */,
 				5224CBED255438A100BF47C6 /* ViewController.swift in Sources */,
+				5219EED125557AE800AE41AE /* CurrencyModel.swift in Sources */,
+				52EF6D7925544A09009C3CFE /* Currency.swift in Sources */,
 				5224CBE9255438A100BF47C6 /* AppDelegate.swift in Sources */,
 				5224CBEB255438A100BF47C6 /* SceneDelegate.swift in Sources */,
+				5219EEDA25557BAC00AE41AE /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +325,12 @@
 /* Begin PBXTargetDependency section */
 		5224CBFD255438A500BF47C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5224CBE4255438A100BF47C6 /* CurrencyForFutureMVC */;
+			target = 5224CBE4255438A100BF47C6 /* CurrencyMVVM */;
 			targetProxy = 5224CBFC255438A500BF47C6 /* PBXContainerItemProxy */;
 		};
 		5224CC08255438A500BF47C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5224CBE4255438A100BF47C6 /* CurrencyForFutureMVC */;
+			target = 5224CBE4255438A100BF47C6 /* CurrencyMVVM */;
 			targetProxy = 5224CC07255438A500BF47C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NPGNG99UN2;
-				INFOPLIST_FILE = CurrencyForFutureMVC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NPGNG99UN2;
-				INFOPLIST_FILE = CurrencyForFutureMVC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyForFutureMVC.app/CurrencyForFutureMVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyMVVM.app/CurrencyMVVM";
 			};
 			name = Debug;
 		};
@@ -509,7 +549,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyForFutureMVC.app/CurrencyForFutureMVC";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyMVVM.app/CurrencyMVVM";
 			};
 			name = Release;
 		};
@@ -556,7 +596,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5224CBE0255438A100BF47C6 /* Build configuration list for PBXProject "CurrencyForFutureMVC" */ = {
+		5224CBE0255438A100BF47C6 /* Build configuration list for PBXProject "CurrencyMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5224CC0D255438A500BF47C6 /* Debug */,
@@ -565,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5224CC0F255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVC" */ = {
+		5224CC0F255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5224CC10255438A500BF47C6 /* Debug */,
@@ -574,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5224CC12255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVCTests" */ = {
+		5224CC12255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5224CC13255438A500BF47C6 /* Debug */,
@@ -583,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5224CC15255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyForFutureMVCUITests" */ = {
+		5224CC15255438A500BF47C6 /* Build configuration list for PBXNativeTarget "CurrencyMVVMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5224CC16255438A500BF47C6 /* Debug */,
