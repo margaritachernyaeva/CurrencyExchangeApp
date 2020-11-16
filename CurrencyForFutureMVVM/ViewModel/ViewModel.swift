@@ -8,7 +8,6 @@
 import Foundation
 
 protocol ViewModelDelegate: class {
-    
     func reloadTableView()
     func showError(error: String)
 }
@@ -26,9 +25,11 @@ class ViewModel {
     }
     
     func getData() {
-        CurrencyModel.getData(closure: { (currency) in
+        CurrencyModel.getData(complition: { (currency) in
             self.nationalCurrencyArray = currency
             self.delegate.reloadTableView()
+        }, error: { (error) in
+            self.delegate.showError(error: error.localizedDescription)
         })
     }
     

@@ -8,8 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
- 
 
     @IBOutlet weak var tableView: UITableView!
     var cellIdentifier = "cell"
@@ -25,35 +23,39 @@ class ViewController: UIViewController {
         
         viewModel?.getData()
     }
-    
-        
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel!.getCurrencyCount()
+        if let viewModel = viewModel {
+            return viewModel.getCurrencyCount()
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CurrencyTableViewCell
-        let item = viewModel!.getItem(row: indexPath.row)
-        let imageAndSymbal = viewModel!.findSymbolAndImageName(currencyCode: item.cur_Abbreviation!)
-        
-        cell.flagImageView.image = UIImage(named: imageAndSymbal.cur_FlagImageName )
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CurrencyTableViewCell else {
+            return UITableViewCell() // crash
+        }
+        guard let viewModel = viewModel else {
+            return UITableViewCell()
+        }
+        let item = viewModel.getItem(row: indexPath.row)
+        let imageAndSymbal = viewModel.findSymbolAndImageName(currencyCode: item.cur_Abbreviation ?? "Unknown")
+        cell.flagImageView.image = UIImage(named: imageAndSymbal.cur_FlagImageName)
         cell.officialRateLabel.text = "\(item.cur_OfficialRate ?? 0.00) BYN"
         cell.curNameLabel.text = "\(item.cur_Abbreviation ?? "Mistake") 1 \(imageAndSymbal.cur_Symbol ) = "
-        
-        var date = item.date
-        let range = (date?.index(item.date!.endIndex, offsetBy: -9))!..<date!.endIndex
-        date?.removeSubrange(range)
-        cell.todayLabel.text = date
+        // transForm date String to reading format
+        if var date = item.date {
+            let range = (date.index(date.endIndex, offsetBy: -9))..<date.endIndex
+            date.removeSubrange(range)
+            cell.todayLabel.text = date
+        }
         return cell
     }
-    
-   
-    
 }
+
 extension ViewController: ViewModelDelegate {
     
     func reloadTableView() {
@@ -61,10 +63,11 @@ extension ViewController: ViewModelDelegate {
     }
     
     func showError(error: String) {
-        let alert = UIAlertController(title: "Mistake", message: "Try again", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Mistake", message: "Try again\n" + error, preferredStyle: .alert)
         let butOK = UIAlertAction(title: "OK", style: .default, handler: nil)
        alert.addAction(butOK)
-        present(alert, animated: true)    }
+        present(alert, animated: true)
+    }
 
 }
 
